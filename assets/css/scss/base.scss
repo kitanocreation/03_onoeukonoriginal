@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 $black: #333333;
-$black_a: rgba(51, 51, 51, .5);
+$black_a: rgba(51, 51, 51, .75);
 $white: #FFFFFF;
 $grey: #E6E6E6;
 $brown: #512812;
+$brown_a: rgba(81, 40, 18, .9);
 $yellow: #FFDF4A;
+$red: #C33B1D;
 
 * {
     font-family: "Noto Sans JP", sans-serif;
