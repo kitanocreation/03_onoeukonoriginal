@@ -1,0 +1,176 @@
+/* --- reset --- */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #512812;
+  letter-spacing: 1.4px;
+  line-height: 23.1px;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.ukonOrg_fv, .ukonOrg_fv_pc, main, section, footer {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .ukonOrg_header, body .ukonOrg_header_bk {
+  width: 100vw;
+  height: 97.5px;
+}
+body .ukonOrg_header {
+  width: 100vw;
+  height: 97.5px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body .ukonOrg_fv {
+  height: calc(100vh - 97.5px);
+  background-image: url(../img/bg2_sp.svg);
+  position: relative;
+}
+body .ukonOrg_fv .ukonOrg_fv_curryUkon {
+  width: 90%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+body .ukonOrg_fv .ukonOrg_fv_curryUkon img {
+  border-radius: 25px 25px 0 0;
+}
+body .ukonOrg_main {
+  padding-top: 75px;
+  background-image: url(../img/bg1_sp.webp);
+}
+body .ukonOrg_main .ukonOrg_15aniv .ukonOrg_15aniv_con {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .ukonOrg_main .ukonOrg_15aniv .ukonOrg_15aniv_con .ukonOrg_15aniv-icon {
+  width: 25%;
+}
+body .ukonOrg_main .ukonOrg_15aniv .ukonOrg_15aniv_con p {
+  margin-left: 15px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 21px;
+}
+body .ukonOrg_main .ukonOrg_15aniv .ukonOrg_15aniv_con p span {
+  margin-bottom: 7px;
+  display: block;
+  font-family: "ten-mincho-text", serif;
+  font-size: 17.5px;
+  line-height: 17.5px;
+  line-height: 21px;
+}
+body .ukonOrg_main .ukonOrg_15aniv .ukonOrg_firePack {
+  width: 85%;
+  margin: 12.5px auto 0 auto;
+}
+body .ukonOrg_main .ukonOrg_curry_obi {
+  margin-top: 100px;
+}
+body footer {
+  height: calc(100vh - 75px);
+  background-color: #E6E6E6;
+  margin-top: 75px;
+}

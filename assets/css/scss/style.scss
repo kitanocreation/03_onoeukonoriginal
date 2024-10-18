@@ -1,0 +1,84 @@
+@import './reset';
+@import './base';
+
+body {
+
+    .ukonOrg_header, .ukonOrg_header_bk {
+        width: 100vw;
+        height: 97.5px;
+        
+    }
+    
+    .ukonOrg_header {
+        width: 100vw;
+        height: 97.5px;
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .ukonOrg_fv {
+        height: calc(100vh - 97.5px);
+        background-image: url(../img/bg2_sp.svg);
+        position: relative;
+
+        .ukonOrg_fv_curryUkon {
+            width: 90%;
+            height: 60%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+
+            img {
+                border-radius: 25px 25px 0 0;
+            }
+        }
+    }
+
+    .ukonOrg_main {
+        padding-top: 75px;
+        background-image: url(../img/bg1_sp.webp);
+
+        .ukonOrg_15aniv {
+
+            .ukonOrg_15aniv_con {
+                margin: 0 auto;
+                @include center;
+
+                .ukonOrg_15aniv-icon {
+                    width: 25%;
+                }
+
+                p {
+                    margin-left: 15px;
+                    @include font_ll;
+
+                    span {
+                        margin-bottom: 7px;
+                        display: block;
+                        font-family: "ten-mincho-text", serif;
+                        @include font_l;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+            .ukonOrg_firePack {
+                width: 85%;
+                margin: 12.5px auto 0 auto;
+            }
+        }
+
+        .ukonOrg_curry_obi {
+            margin-top: 100px;
+        }
+    }
+
+    footer {
+        height: calc(100vh - 75px);
+        background-color: $grey;
+        margin-top: 75px;
+    }
+}
