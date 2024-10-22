@@ -131,7 +131,7 @@ body .ukonOrg_header {
   z-index: 2;
 }
 body .ukonOrg_fv_sp {
-  height: calc(95vh - 97.5px);
+  height: 550px;
   background-image: url(../img/bg2_sp.svg);
   display: flex;
   justify-content: center;
@@ -140,7 +140,7 @@ body .ukonOrg_fv_sp {
 }
 body .ukonOrg_fv_sp .ukonOrg_fv_con {
   width: 90%;
-  height: 60%;
+  height: 65%;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -159,12 +159,12 @@ body .ukonOrg_fv_sp .ukonOrg_fv_con .ukonOrg_fv_bubble .ukonOrg_fv_bubble_img {
 }
 body .ukonOrg_fv_sp .ukonOrg_fv_con .ukonOrg_fv_bubble .ukonOrg_fv_pack {
   width: auto;
-  height: 35%;
+  height: 75px;
   box-shadow: rgba(51, 51, 51, 0.75) 1px 1px 7.5px;
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(0%, 15%) rotate(7.5deg);
+  transform: translate(-17.5%, 27.5%) rotate(7.5deg);
 }
 body .ukonOrg_fv_sp .ukonOrg_fv_con .ukonOrg_fv_curryUkon {
   border-radius: 40px 40px 0 0;
@@ -205,6 +205,9 @@ body .ukonOrg_main .ukonOrg_biribiri {
   left: 0;
   transform: translateY(-97.5%);
   z-index: 1;
+}
+body .ukonOrg_main .ukonOrg_biribiri img {
+  object-fit: initial;
 }
 body .ukonOrg_main .ukonOrg_15aniv .ukonOrg_15aniv_con {
   margin: 0 auto;
@@ -414,6 +417,9 @@ body .ukonOrg_main .ukonOrg_seasoning .ukonOrg_seasoning_biribiri {
   transform: translateX(-0.025vw) rotate(180deg);
   z-index: 1;
 }
+body .ukonOrg_main .ukonOrg_seasoning .ukonOrg_seasoning_biribiri img {
+  object-fit: initial;
+}
 body .ukonOrg_main .ukonOrg_seasoning h2 {
   font-size: 21px;
   font-weight: 600;
@@ -500,6 +506,9 @@ body .ukonOrg_main .ukonOrg_story .ukonOrg_story_biribiri:nth-of-type(1) {
   left: 0;
   transform: translate(0.075vw, -100%);
   z-index: 1;
+}
+body .ukonOrg_main .ukonOrg_story .ukonOrg_story_biribiri:nth-of-type(1) img {
+  object-fit: initial;
 }
 body .ukonOrg_main .ukonOrg_story h2 {
   width: 75%;
@@ -628,6 +637,9 @@ body .ukonOrg_main .ukonOrg_story .ukonOrg_story_biribiri:nth-of-type(2) {
   transform: translate(-0.075vw, 100%) rotate(180deg);
   z-index: 1;
 }
+body .ukonOrg_main .ukonOrg_story .ukonOrg_story_biribiri:nth-of-type(2) img {
+  object-fit: initial;
+}
 body .ukonOrg_main .ukonOrg_check {
   background-image: url(../img/bg3_sp.svg);
   padding: 75px 0;
@@ -750,8 +762,10 @@ body footer {
   }
   body .ukonOrg_fv_pc {
     display: block;
-    height: 70vh;
+    height: 500px;
     background-image: url(../img/bg2_pc.svg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -761,10 +775,11 @@ body footer {
     display: flex;
     justify-content: center;
     align-items: end;
+    transform: translateX(25px);
   }
   body .ukonOrg_fv_pc .ukonOrg_fv_con .ukonOrg_fv_con_img {
     width: 57.5vw;
-    height: 55vh;
+    height: 385px;
     border-radius: 60px 60px 0 0;
     display: flex;
     justify-content: space-between;
@@ -784,23 +799,23 @@ body footer {
     position: relative;
   }
   body .ukonOrg_fv_pc .ukonOrg_fv_con .ukonOrg_fv_con_img .ukonOrg_fv_title .ukonOrg_fv_title1 {
-    height: 17.5vh;
+    height: 125px;
     margin-left: 21px;
   }
   body .ukonOrg_fv_pc .ukonOrg_fv_con .ukonOrg_fv_con_img .ukonOrg_fv_title .ukonOrg_fv_title2 {
-    height: 9vh;
+    height: 75px;
     margin-left: 100px;
   }
   body .ukonOrg_fv_pc .ukonOrg_fv_con .ukonOrg_fv_con_img .ukonOrg_fv_pake {
-    height: 15vh;
-    transform: translate(-25px, 80px) rotate(-7.5deg);
+    height: 125px;
+    transform: translate(-25px, 75px) rotate(-7.5deg);
     z-index: 1;
   }
   body .ukonOrg_fv_pc .ukonOrg_fv_con .ukonOrg_fv_con_img .ukonOrg_fv_pake img {
     width: auto;
   }
   body .ukonOrg_fv_pc .ukonOrg_fv_con .ukonOrg_fv_con_img .ukonOrg_fv_bubble {
-    height: 30vh;
+    height: 200px;
     position: absolute;
     top: 0;
     right: 0;

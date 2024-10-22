@@ -23,14 +23,15 @@ body {
     }
     
     .ukonOrg_fv_sp {
-        height: calc(95vh - 97.5px);
+        // height: calc(95vh - 97.5px);
+        height: 550px;
         background-image: url(../img/bg2_sp.svg);
         @include center;
         position: relative;
 
         .ukonOrg_fv_con {
             width: 90%;
-            height: 60%;
+            height: 65%;
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -50,12 +51,12 @@ body {
     
                 .ukonOrg_fv_pack {
                     width: auto;
-                    height: 35%;
+                    height: 75px;
                     box-shadow: $black_a 1px 1px 7.5px;
                     position: absolute;
                     bottom: 0;
                     right: 0;
-                    transform: translate(0%, 15%) rotate(7.5deg);
+                    transform: translate(-17.5%, 27.5%) rotate(7.5deg);
                 }
             }
 
@@ -101,6 +102,10 @@ body {
             @include absolute;
             transform: translateY(-97.5%);
             z-index: 1;
+
+            img {
+                object-fit: initial;
+            }
         }
 
         .ukonOrg_15aniv {
@@ -261,6 +266,10 @@ body {
                 @include absolute;
                 transform: translateX(-.025vw) rotate(180deg);
                 z-index: 1;
+
+                img {
+                    object-fit: initial;
+                }
             }
 
             h2 {
@@ -359,6 +368,10 @@ body {
                 @include absolute;
                 transform: translate(.075vw, -100%);
                 z-index: 1;
+                            
+                img {
+                    object-fit: initial;
+                }
             }
 
             h2 {
@@ -430,6 +443,10 @@ body {
                 left: 0;
                 transform: translate(-.075vw, 100%) rotate(180deg);
                 z-index: 1;
+                            
+                img {
+                    object-fit: initial;
+                }
             }
         }
 
@@ -502,8 +519,9 @@ body {
 
         .ukonOrg_fv_pc {
             display: block;
-            height: 70vh;
+            height: 500px;
             background-image: url(../img/bg2_pc.svg);
+            @include bg;
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -513,10 +531,11 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: end;
+                transform: translateX(25px);
 
                 .ukonOrg_fv_con_img {
                     width: 57.5vw;
-                    height: 55vh;
+                    height: 385px;
                     border-radius: 60px 60px 0 0;
                     display: flex;
                     justify-content: space-between;
@@ -536,19 +555,19 @@ body {
                         }
     
                         .ukonOrg_fv_title1 {
-                            height: 17.5vh;
+                            height: 125px;
                             margin-left: 21px;
                         }
     
                         .ukonOrg_fv_title2 {
-                            height: 9vh;
+                            height: 75px;
                             margin-left: 100px;
                         }    
                     }
 
                     .ukonOrg_fv_pake {
-                        height: 15vh;
-                        transform: translate(-25px, 80px) rotate(-7.5deg);
+                        height: 125px;
+                        transform: translate(-25px, 75px) rotate(-7.5deg);
                         z-index: 1;
 
                         img {
@@ -557,7 +576,7 @@ body {
                     }
 
                     .ukonOrg_fv_bubble {
-                        height: 30vh;
+                        height: 200px;
                         position: absolute;
                         top: 0;
                         right: 0;
