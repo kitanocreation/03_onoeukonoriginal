@@ -72,14 +72,14 @@ body {
             }
 
             .ukonOrg_title1 {
-                width: 45%;
+                width: 155px;
                 top: 0;
                 left: 15px;
                 transform: translateY(-50%);
             }
     
             .ukonOrg_title2 {
-                width: 75%;
+                width: 225px;
                 top: 75px;
                 right: 15px;
                 transform: translateY(-65%);
@@ -129,6 +129,7 @@ body {
                         font-family: "ten-mincho-text", serif;
                         @include font_l;
                         line-height: 21px;
+                        transform: translateX(-10px);
                     }
                 }
             }
@@ -452,6 +453,7 @@ body {
 
         .ukonOrg_check {
             background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg3_sp.svg);
+            @include bg;
             padding: 75px 0;
 
             h2 {
@@ -640,6 +642,7 @@ body {
                         span {
                             @include font_l_pc;
                             line-height: 24px;
+                            transform: translateX(0);
                         }
                     }
                 }
