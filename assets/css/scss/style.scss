@@ -1,0 +1,905 @@
+@import './reset';
+@import './base';
+
+body {
+
+    .ukonOrg_pc {
+        display: none;
+    }
+
+    .ukonOrg_header, .ukonOrg_header_bk {
+        width: 100vw;
+        height: 97.5px;
+    }
+    
+    .ukonOrg_header {
+        width: 100vw;
+        height: 97.5px;
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    
+    .ukonOrg_fv_sp {
+        height: calc(95vh - 97.5px);
+        background-image: url(../img/bg2_sp.svg);
+        @include center;
+        position: relative;
+
+        .ukonOrg_fv_con {
+            width: 90%;
+            height: 60%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 1;
+
+            .ukonOrg_fv_bubble {
+                width: 90%;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -87.5%);
+                z-index: 1;
+    
+                .ukonOrg_fv_bubble_img {
+                    object-fit: initial;
+                }
+    
+                .ukonOrg_fv_pack {
+                    width: auto;
+                    height: 35%;
+                    box-shadow: $black_a 1px 1px 7.5px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    transform: translate(0%, 15%) rotate(7.5deg);
+                }
+            }
+
+            .ukonOrg_fv_curryUkon {
+                border-radius: 40px 40px 0 0;
+                @include absolute;
+            }
+
+            .ukonOrg_title1, .ukonOrg_title2 {
+                height: fit-content;
+                position: absolute;
+                z-index: 2;
+            }
+
+            .ukonOrg_title1 {
+                width: 45%;
+                top: 0;
+                left: 15px;
+                transform: translateY(-50%);
+            }
+    
+            .ukonOrg_title2 {
+                width: 75%;
+                top: 75px;
+                right: 15px;
+                transform: translateY(-65%);
+            }    
+        }
+    }
+    
+    .ukonOrg_fv_pc {
+        display: none;
+    }
+
+    .ukonOrg_main {
+        padding-top: 75px;
+        background-image: url(../img/bg1_sp.webp);
+        position: relative;
+
+        .ukonOrg_biribiri {
+            width: 100%;
+            height: 25px;
+            @include absolute;
+            transform: translateY(-97.5%);
+            z-index: 1;
+        }
+
+        .ukonOrg_15aniv {
+
+            .ukonOrg_15aniv_con {
+                margin: 0 auto;
+                @include center;
+
+                .ukonOrg_15aniv-icon {
+                    width: 20%;
+                    transform: translateY(1.5px);
+                }
+
+                h2 {
+                    margin-left: 15px;
+                    @include font_ll;
+
+                    span {
+                        margin-bottom: 7px;
+                        display: block;
+                        font-family: "ten-mincho-text", serif;
+                        @include font_l;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+            .ukonOrg_firePack {
+                width: 85%;
+                margin: 35px auto 0 auto;
+            }
+        }
+
+        .ukonOrg_curry_obi {
+            margin-top: 100px;
+        }
+
+        .ukonOrg_3collabo {
+            width: 90%;
+            padding-bottom: 17.5px;
+            margin: 100px auto 0 auto;
+            border: solid 1px $brown;
+            background-color: $white;
+
+            h2 {
+                width: 90%;
+                border-radius: 25px;
+                background-color: $brown;
+                padding: 12px 0;
+                margin: 17.5px auto 0 auto;
+                @include font_l;
+                color: $white;
+                text-align: center;
+            }
+
+            .ukonOrg_3collabo_icons {
+                margin-top: 30px;
+                @include center;
+
+                .ukonOrg_3collabo-icon {
+                    width: 75px;
+                }
+
+                .ukonOrg_cross {
+                    margin: 0 15px;
+                    position: relative;
+
+                    div {
+                        width: 1px;
+                        height: 20px;
+                        background-color: $red;
+                    }
+
+                    div:nth-of-type(1) {
+                        transform: translateY(50%) rotate(45deg);
+                    }
+
+                    div:nth-of-type(2) {
+                        transform: translateY(-50%) rotate(-45deg);
+                    }
+                }
+            }
+
+            p {
+                margin-top: 22.5px;
+                text-align: center;
+            }
+        }
+
+        .ukonOrg_card {
+            width: 90%;
+            padding-bottom: 100px;
+            margin: 100px auto 0 auto;
+            position: relative;
+
+            h2 {
+                width: 50vw;
+                transform: rotate(-10deg)
+            }
+
+            .ukonOrg_card_p {
+                margin-top: 10px;
+                @include font_ll;
+                line-height: 34.65px;
+                text-align: center;
+            }
+
+            .ukonOrg_card_con {
+                margin-top: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .ukonOrg_card_con_card {
+
+                    img {
+                        width: 40vw;
+                    }
+                }
+
+                .ukonOrg_card_con_card:nth-of-type(1) {
+                    grid-column: 1 / -1;
+                    @include center;
+                }
+
+                .ukonOrg_card_con_card:nth-of-type(2) {
+                    grid-column: 1;
+                    transform: translateY(-12.5px);
+                }
+
+                .ukonOrg_card_con_card:nth-of-type(3) {
+                    grid-column: 2;
+                    transform: translateY(-12.5px);
+                }
+            }
+
+            p {
+                @include font_s;
+                line-height: 19.8px;
+                text-align: center;
+                transform: translateY(-10px);
+            }
+
+            .ukonOrg_cta {
+                margin-top: 50px;
+
+                @include cta;
+            }
+        }
+
+        .ukonOrg_seasoning {
+            background-image: url(../img/bg2_sp.svg);
+            padding: 100px 0 125px 0;
+            position: relative;
+
+            .ukonOrg_seasoning_biribiri {
+                width: 100vw;
+                height: 25px;
+                @include absolute;
+                transform: translateX(-.025vw) rotate(180deg);
+                z-index: 1;
+            }
+
+            h2 {
+                @include font_ll;
+                font-weight: 500;
+                color: $white;
+                line-height: 34.65px;
+                text-align: center;
+            }
+
+            article {
+                width: 90%;
+                margin: 75px auto 0 auto;
+                border: solid 1px $brown;
+                border-radius: 40px;
+                background-color: $red;
+                position: relative;
+
+                .ukonOrg_num {
+                    width: 25%;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                h3 {
+                    padding-top: 50px;
+                    @include font_l;
+                    color: $yellow;
+                    text-align: center;
+                    transform: translateX(10.5px);
+
+                    ruby {
+                        width: fit-content;
+                        @include font_l;
+                        color: $yellow;
+                        ruby-align: center;
+                        position: relative;
+                        left: -12px;
+
+                        rt {
+                            @include font_ss;
+                            color: $yellow;
+                            letter-spacing: -1px;
+                        }
+                    }
+                }
+
+                .ukonOrg_gizagiza1 {
+                    width: 40%;
+                    margin: 22.5px auto 0 auto;
+                }
+
+                p {
+                    width: 95%;
+                    margin: 12.5px auto 0 auto;
+                    font-weight: 300;
+                    color: $white;
+                    transform: translateX(7px);
+                }
+
+                .ukonOrg_seasoning_img {
+                    margin-top: 17.5px;
+
+                    img {
+                        height: auto;
+                        border-radius: 0 0 40px 40px;
+                    }
+                }
+            }
+
+            article:nth-of-type(1) {
+
+                .ukonOrg_seasoning_img {
+                    transform: translateY(5.75px);
+                }
+            }
+
+            article:nth-of-type(2) {
+                margin: 100px auto 0 auto;
+
+                .ukonOrg_seasoning_img {
+                    transform: translateY(7.25px);
+                }
+            }
+        }
+
+        .ukonOrg_story {
+            padding: 100px 0;
+            position: relative;
+
+            .ukonOrg_story_biribiri:nth-of-type(1) {
+                width: 100vw;
+                height: 25px;
+                @include absolute;
+                transform: translate(.075vw, -100%);
+                z-index: 1;
+            }
+
+            h2 {
+                width: 75%;
+                margin: 0 auto;
+                @include font_ll;
+                font-weight: 600;
+                color: $green;
+                line-height: 34.65px;
+                text-align: center;
+
+                .ukonOrg_gizagiza2:nth-of-type(1) {
+                    margin-bottom: 5px;
+                }
+
+                .ukonOrg_gizagiza2:nth-of-type(2) {
+                    margin-top: 5px;
+                    transform: rotate(180deg);
+                }
+            }
+
+            article {
+                width: 90%;
+                margin: 50px auto 0 auto;
+
+                h3 {
+                    @include font_l;
+                    font-weight: 600;
+                    line-height: 28.875px;
+                    text-align: center;
+
+                    span {
+                        display: block;
+                        width: 10%;
+                        margin: 5px auto 0 auto;
+                    }
+                }
+
+                .ukonOrg_story_con {
+                    width: 100%;
+                }
+
+                p {
+                    width: 100%;
+                    margin-top: 12.5px;
+                    transform: translateX(7px);
+                }
+            }
+
+            article:nth-of-type(2) {
+                margin: 75px auto 0 auto;
+
+                .ukonOrg_story_con {
+                    margin-top: 25px;
+                }
+            }
+
+            .ukonOrg_cta {
+                margin: 75px auto 0 auto;
+
+                @include cta;
+            }
+
+            .ukonOrg_story_biribiri:nth-of-type(2) {
+                width: 100vw;
+                height: 25px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translate(-.075vw, 100%) rotate(180deg);
+                z-index: 1;
+            }
+        }
+
+        .ukonOrg_check {
+            background-image: url(../img/bg3_sp.svg);
+            padding: 75px 0;
+
+            h2 {
+                @include font_ll;
+                font-weight: 500;
+                color: $white;
+                line-height: 34.65px;
+                text-align: center;
+            }
+
+            .ukonOrg_check_images {
+                width: 90%;
+                margin: 50px auto 0 auto;
+                @include center;
+                flex-wrap: wrap;
+
+                div {
+                    width: calc(33.3% - 12.5px);
+                    margin-left: 12.5px;
+
+                    img {
+                        height: auto;
+                    }
+                }
+
+                div:nth-of-type(1), div:nth-of-type(4) {
+                    margin-left: 0;
+                }
+            }
+
+            .ukonOrg_cta {
+                width: 90%;
+                margin: 50px auto 0 auto;
+
+                @include cta;
+            }
+        }
+    }
+
+    footer {
+        height: calc(100vh - 75px);
+        background-color: $grey;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .ukonOrg_sp {
+        display: none;
+    }
+
+    .ukonOrg_pc {
+        display: block;
+    }
+    
+    body {
+
+        .ukonOrg_header, .ukonOrg_header_bk {
+            height: 147.5px;
+        }
+
+        .ukonOrg_fv_sp {
+            display: none;
+        }
+
+        .ukonOrg_fv_pc {
+            display: block;
+            height: 70vh;
+            background-image: url(../img/bg2_pc.svg);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+
+            .ukonOrg_fv_con {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                .ukonOrg_fv_con_img {
+                    width: 57.5vw;
+                    height: 55vh;
+                    border-radius: 60px 60px 0 0;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    
+                    .ukonOrg_fv_con_bgImg {
+                        border-radius: 60px 60px 0 0;
+                        @include absolute;
+                    }
+
+                    .ukonOrg_fv_title {
+                        transform: translateY(-7.5vh);
+
+                        .ukonOrg_fv_title1, .ukonOrg_fv_title2 {
+                            width: auto;
+                            position: relative;
+                        }
+    
+                        .ukonOrg_fv_title1 {
+                            height: 17.5vh;
+                            margin-left: 21px;
+                        }
+    
+                        .ukonOrg_fv_title2 {
+                            height: 9vh;
+                            margin-left: 100px;
+                        }    
+                    }
+
+                    .ukonOrg_fv_pake {
+                        height: 15vh;
+                        transform: translate(-25px, 80px) rotate(-7.5deg);
+                        z-index: 1;
+
+                        img {
+                            width: auto;
+                        }
+                    }
+
+                    .ukonOrg_fv_bubble {
+                        height: 30vh;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translate(30%, -40%);
+                        z-index: 0;
+
+                        img {
+                            width: auto;
+                        }
+                    }
+                }
+
+                .ukonOrg_fv_ukon {
+                    height: 60vh;
+                    margin-left: 12.5px;
+                    z-index: 1;
+
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .ukonOrg_main {
+            padding-top: 100px;
+            background-image: url(../img/bg1_pc.webp);
+
+            .ukonOrg_biribiri {
+                transform: translate(-.015vw, -97.5%);
+
+                img {
+                    object-fit: initial;
+                }
+            }
+
+            .ukonOrg_pc {
+                display: block;
+            }
+
+            .ukonOrg_15aniv {
+                width: 1000px;
+                margin: 0 auto;
+                @include center;
+
+                .ukonOrg_15aniv_con {
+                    margin: 0 0;
+                    flex-direction: column;
+
+                    .ukonOrg_15aniv-icon {
+                        width: 40%;
+                        transform: translateY(0);
+                    }
+    
+                    h2 {
+                        margin-top: 25px;
+                        margin-left: 0;
+                        font-size: 48px;
+                        line-height: 48px;
+    
+                        span {
+                            @include font_l_pc;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .ukonOrg_firePack {
+                    width: 50%;
+                    margin: 0 0 0 0;
+                }
+            }
+
+            .ukonOrg_curry_obi {
+                margin-top: 150px;
+            }
+
+            .ukonOrg_3collabo {
+                width: 1000px;
+                padding-bottom: 40px;
+                
+                h2 {
+                    width: 90%;
+                    border-radius: 30px;
+                    padding: 16px 0;
+                    margin: 30px auto 0 auto;
+                    @include font_lll_pc; 
+                    font-weight: 500;
+                }
+
+                .ukonOrg_3collabo_icons {
+    
+                    .ukonOrg_3collabo-icon {
+                        width: 125px;
+                    }
+    
+                    .ukonOrg_cross {
+                        margin: 0 35px;
+    
+                        div {
+                            width: 1px;
+                            height: 35px;
+                        }
+                    }
+                }
+    
+                p {
+                    margin-top: 30px;
+                }
+            }
+
+            .ukonOrg_card {
+                width: 1000px;
+                padding-bottom: 150px;
+                margin: 150px auto 0 auto;
+
+                h2 {
+                    width: 30vw;
+                }
+
+                .ukonOrg_card_p {
+                    margin-top: 10px;
+                    font-size: 48px;
+                    line-height: 79.2px;
+                    text-align: center;
+                }
+
+                .ukonOrg_card_con {
+                    width: 95%;
+                    margin: 25px auto 0 auto;
+                    display: flex;
+
+                    .ukonOrg_card_con_card {
+                        width: calc(33.3% - 2.5px);
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+    
+                    .ukonOrg_card_con_card:nth-of-type(2) {
+                        transform: translateY(0);
+                    }
+    
+                    .ukonOrg_card_con_card:nth-of-type(3) {
+                        transform: translateY(0);
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 26.4px;
+                }
+
+                .ukonOrg_cta {
+                    margin-top: 75px;
+    
+                    @include cta_pc;
+                }
+            }
+
+            .ukonOrg_seasoning {
+                background-image: url(../img/bg2_pc.svg);
+                padding: 150px 0 175px 0;
+
+                .ukonOrg_seasoning_biribiri {
+                    transform: translate(.05vw, -2.5%) rotate(180deg);
+
+                    img {
+                        object-fit: initial;
+                    }
+                }
+
+                h2 {
+                    font-size: 48px;
+                    line-height: 79.2px;
+                }
+
+                article {
+                    width: 1000px;
+                    border-radius: 60px;
+
+                    .ukonOrg_num {
+                        width: 10%;
+                    }
+
+                    h3 {
+                        margin-top: 12.5px;
+                        @include font_lll_pc; 
+                        font-weight: 500;
+
+                        ruby {
+                            @include font_lll_pc;
+                            left: -17.5px;
+    
+                            rt {
+                                @include font_ss_pc;
+                            }
+                        }
+                    }
+
+                    .ukonOrg_gizagiza1 {
+                        width: 15%;
+                        margin: 32.5px auto 0 auto;
+                    }
+
+                    p {
+                        margin: 25px auto 0 auto;
+                    }
+
+                    .ukonOrg_seasoning_img {
+                        height: 400px;
+                        margin-top: 25px;
+    
+                        img {
+                            height: 100%;
+                            border-radius: 0 0 60px 60px;
+                        }
+                    }
+                }
+            }
+
+            .ukonOrg_story {
+                padding: 150px 0 175px 0;
+
+                .ukonOrg_story_biribiri:nth-of-type(1) {
+                    transform: translate(-.015vw, -97.5%);
+
+                    img {
+                        object-fit: initial;
+                    }
+                }
+
+                h2 {
+                    font-size: 48px;
+                    line-height: 79.2px;
+
+                    .ukonOrg_gizagiza2 {
+                        width: 75%;
+                    }
+
+                    .ukonOrg_gizagiza2:nth-of-type(1) {
+                        margin: 0 auto 10px auto;
+                    }
+    
+                    .ukonOrg_gizagiza2:nth-of-type(2) {
+                        margin: 10px auto 0 auto;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                article {
+                    width: 1000px;
+                    margin: 75px auto 0 auto;
+
+                    h3 {
+                        @include font_lll_pc;
+                        line-height: 32px;
+    
+                        span {
+                            width: 3.5%;
+                            margin: 25px auto 0 auto;
+                        }
+                    }
+
+                    .ukonOrg_story_flex {
+                        width: 100%;
+                        @include center;
+
+                        .ukonOrg_story_con {
+                            width: 50%;
+                        }
+
+                        p {
+                            width: 50%;
+                            padding-left: 25px;
+                        }
+                    }
+                }
+
+                article:nth-of-type(2) {
+                    margin: 100px auto 0 auto;
+    
+                    .ukonOrg_story_con {
+                        margin-top: 25px;
+                    }
+                }
+
+                .ukonOrg_cta {
+                    margin: 100px auto 0 auto;
+    
+                    @include cta_pc;
+
+                    .ukonOrg_button {
+                        margin-top: 7.5px;
+                    }
+                }
+
+                .ukonOrg_story_biribiri:nth-of-type(2) {
+                    transform: translate(.02vw, 100%) rotate(180deg);
+
+                    img {
+                        object-fit: initial;
+                    }
+                }
+            }
+
+            .ukonOrg_check {
+                background-image: url(../img/bg3_pc.svg);
+                padding: 150px 0 175px 0;
+
+                h2 {
+                    font-size: 48px;
+                    line-height: 79.2px;
+                }
+
+                .ukonOrg_check_images {
+                    width: 1000px;
+                    margin: 75px auto 0 auto;
+                    flex-wrap: nowrap;
+
+                    div {
+                        width: calc(16.7% - 12.5px);
+                        margin-left: 12.5px;
+                    }
+    
+                    div:nth-of-type(1), div:nth-of-type(4) {
+                        margin-left: 12.5px;
+                    }
+                }
+
+                .ukonOrg_cta {
+                    width: 1000px;
+                    margin: 75px auto 0 auto;
+    
+                    @include cta_pc;
+                }
+            }
+        }
+
+        footer {
+            height: 30vh;
+        }
+    }
+}
