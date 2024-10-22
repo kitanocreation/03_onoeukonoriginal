@@ -1,29 +1,34 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>尾上右近さんオリジナル商品｜【公式】北野エース公式通販</title>
-    <!-- <link rel="stylesheet" href="https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/css/style.css"> -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'wku2cgo',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-    </script>
-</head>
+<{$module.head_up}>
+<title>尾上右近さんオリジナル商品｜【公式】北野エース公式通販</title>
+<{$module.head_down}>
+<link rel="stylesheet" href="https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/css/style2.css">
+<style>
+    header, footer {
+        font-size: 14px;
+    }
+    header p, header li, header a, footer p, footer a, footer span, .copyright {
+        color: #333333;
+        letter-spacing: 0;
+    }
+    .header.fix {
+        padding: 0 0;
+    }
+</style>
+<script>
+    (function(d) {
+        var config = {
+        kitId: 'wku2cgo',
+        scriptTimeout: 3000,
+        async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+</script>
 
 <body>
 
-    <div class="ukonOrg_header">
-        Header
-    </div>
+    <{$module.header}>
+    <{$module.side_free}>
     <div class="ukonOrg_header_bk"></div>
     <div class="ukonOrg_fv_sp">
         <div class="ukonOrg_fv_con">
@@ -246,10 +251,7 @@
             </div>
         </section>
     </main>
-    <footer>
-        Footer
-    </footer>
-    
+    <{$module.footer}>
+    <{$module.jquery}>
+    <{$makeshop.body_bottom}>
 </body>
-
-</html>

@@ -132,7 +132,7 @@ body .ukonOrg_header {
 }
 body .ukonOrg_fv_sp {
   height: 550px;
-  background-image: url(../img/bg2_sp.svg);
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg2_sp.svg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +194,7 @@ body .ukonOrg_fv_pc {
 }
 body .ukonOrg_main {
   padding-top: 75px;
-  background-image: url(../img/bg1_sp.webp);
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg1_sp.webp);
   position: relative;
 }
 body .ukonOrg_main .ukonOrg_biribiri {
@@ -404,7 +404,7 @@ body .ukonOrg_main .ukonOrg_card .ukonOrg_cta .ukonOrg_button a div div:nth-of-t
   transform: translate(0, -17.5%) rotate(45deg);
 }
 body .ukonOrg_main .ukonOrg_seasoning {
-  background-image: url(../img/bg2_sp.svg);
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg2_sp.svg);
   padding: 100px 0 125px 0;
   position: relative;
 }
@@ -641,7 +641,7 @@ body .ukonOrg_main .ukonOrg_story .ukonOrg_story_biribiri:nth-of-type(2) img {
   object-fit: initial;
 }
 body .ukonOrg_main .ukonOrg_check {
-  background-image: url(../img/bg3_sp.svg);
+  background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg3_sp.svg);
   padding: 75px 0;
 }
 body .ukonOrg_main .ukonOrg_check h2 {
@@ -762,8 +762,8 @@ body footer {
   }
   body .ukonOrg_fv_pc {
     display: block;
-    height: 500px;
-    background-image: url(../img/bg2_pc.svg);
+    height: 525px;
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg2_pc.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -835,7 +835,7 @@ body footer {
   }
   body .ukonOrg_main {
     padding-top: 100px;
-    background-image: url(../img/bg1_pc.webp);
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg1_pc.webp);
   }
   body .ukonOrg_main .ukonOrg_biribiri {
     transform: translate(-0.015vw, -97.5%);
@@ -982,7 +982,7 @@ body footer {
     transform: translate(0, -17.5%) rotate(45deg);
   }
   body .ukonOrg_main .ukonOrg_seasoning {
-    background-image: url(../img/bg2_pc.svg);
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg2_pc.svg);
     padding: 150px 0 175px 0;
   }
   body .ukonOrg_main .ukonOrg_seasoning .ukonOrg_seasoning_biribiri {
@@ -1140,7 +1140,7 @@ body footer {
     object-fit: initial;
   }
   body .ukonOrg_main .ukonOrg_check {
-    background-image: url(../img/bg3_pc.svg);
+    background-image: url(https://gigaplus.makeshop.jp/kitanoace/03_onoeukon-kyettharhinspicy/img/bg3_pc.svg);
     padding: 150px 0 175px 0;
   }
   body .ukonOrg_main .ukonOrg_check h2 {
