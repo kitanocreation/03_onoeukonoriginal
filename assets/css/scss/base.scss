@@ -21,15 +21,10 @@ $green: #1B6C29;
 
 html, body {
     width: 100vw;
-    overflow-x: hidden;
 }
 
 .ukonOrg_fv_sp, .ukonOrg_fv_pc, main, section, footer {
     width: 100%;
-}
-
-.button {
-
 }
 
 a {
@@ -209,6 +204,17 @@ img {
 
 @mixin cta_pc {
 
+    &:hover {
+
+        .ukonOrg_button {
+            transform: translateY(2.5px);
+
+            &::after {
+                transform: translateY(-2.5px);
+            }
+        }
+    }
+
     p {
         transform: translateX(0);
         
@@ -230,9 +236,11 @@ img {
     .ukonOrg_button {
         width: 90%;
         margin: 0 auto;
+        transition-duration: .1s;
 
         &::after {
             border-radius: 50px;
+            transition-duration: .1s;
         }
 
         a {

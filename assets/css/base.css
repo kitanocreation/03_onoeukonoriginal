@@ -10,7 +10,6 @@
 
 html, body {
   width: 100vw;
-  overflow-x: hidden;
 }
 
 .ukonOrg_fv_sp, .ukonOrg_fv_pc, main, section, footer {

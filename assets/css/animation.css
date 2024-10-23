@@ -122,17 +122,17 @@
     transform: translate(-25px, 75px) rotate(-7.5deg) scale(1, 1);
   }
 }
-/* スケールアップ_card */
-.ukonOrg_scale_card {
+/* スケールアップ_card_sp */
+.ukonOrg_scale_card_sp {
   transform: rotate(-10deg);
 }
 
-.ukonOrg_scaleUp_card {
-  animation: scaleUp_card 1s ease forwards alternate;
+.ukonOrg_scaleUp_card_sp {
+  animation: scaleUp_card_sp 1s ease forwards alternate;
   transform-origin: center;
 }
 
-@keyframes scaleUp_card {
+@keyframes scaleUp_card_sp {
   0% {
     transform: rotate(-10deg);
   }
@@ -141,6 +141,27 @@
   }
   100% {
     transform: rotate(-10deg) scale(1, 1);
+  }
+}
+/* スケールアップ_card_pc */
+.ukonOrg_scale_card_pc {
+  transform: translate(-15px, 30px) rotate(-10deg);
+}
+
+.ukonOrg_scaleUp_card_pc {
+  animation: scaleUp_card_pc 1s ease forwards alternate;
+  transform-origin: center;
+}
+
+@keyframes scaleUp_card_pc {
+  0% {
+    transform: translate(-15px, 30px) rotate(-10deg);
+  }
+  40% {
+    transform: translate(-15px, 30px) rotate(-10deg) scale(1.25, 1.25);
+  }
+  100% {
+    transform: translate(-15px, 30px) rotate(-10deg) scale(1, 1);
   }
 }
 /* スケールアップ_cta */
