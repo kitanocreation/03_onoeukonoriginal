@@ -1,0 +1,28 @@
+header, footer, aside {
+  font-size: 14px;
+}
+
+header p, header li, header a, footer p, footer a, footer span, .copyright {
+  color: #333333;
+  letter-spacing: 0;
+}
+
+.header.fix {
+  padding: 0 0;
+}
+
+section.sp-side-section, .search {
+  width: 75%;
+}
+
+.search-area label, .search-area li, p.accordion {
+  color: #FFFFFF;
+}
+
+.search-btn {
+  width: 92.5%;
+}
+
+a:hover {
+  opacity: 1;
+}
