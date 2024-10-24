@@ -578,6 +578,7 @@ body .ukonOrg_main .ukonOrg_card .ukonOrg_card_con {
   margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transform: translateX(10px);
 }
 body .ukonOrg_main .ukonOrg_card .ukonOrg_card_con .ukonOrg_card_con_card img {
   width: 40vw;
@@ -601,7 +602,7 @@ body .ukonOrg_main .ukonOrg_card p {
   line-height: 12px;
   line-height: 19.8px;
   text-align: center;
-  transform: translateY(-10px);
+  transform: translate(2.5px, -10px);
 }
 body .ukonOrg_main .ukonOrg_card .ukonOrg_cta {
   margin-top: 50px;
